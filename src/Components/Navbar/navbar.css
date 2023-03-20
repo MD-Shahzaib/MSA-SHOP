@@ -1,0 +1,14 @@
+.Logo {
+    width: 10rem;
+    border-radius: 0.5rem;
+}
+
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+.nav-item {
+    border: 1px solid white;
+    border-radius: 0.4rem;
+    margin-right: 0.5rem;
+}
