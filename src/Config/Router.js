@@ -3,7 +3,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 // Import-Screens.
 import Home from '../Screens/Home'
-import About from '../Screens/About'
+import Cart from "../Screens/Cart";
 
 // Import-Router-Components.
 const router = createBrowserRouter([
@@ -12,8 +12,8 @@ const router = createBrowserRouter([
         element: <Home />,
     },
     {
-        path: "/about",
-        element: <About />,
+        path: "/cart",
+        element: <Cart />,
     },
 ]);
 

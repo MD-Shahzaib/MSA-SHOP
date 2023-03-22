@@ -11,18 +11,10 @@ const Navbar = () => {
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul className="navbar-nav mb-2 mb-lg-0">
-                            <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="#">Profile</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" aria-current="page" href="#">Add To Cart</a>
-                            </li>
-                        </ul>
-                        <form className="d-flex">
-                            <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                            <button className="btn btn-primary" type="submit">Search</button>
-                        </form>
+                        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button className="btn btn-primary me-2" type="submit">Search</button>
+                        <button className="btn btn-primary me-2" type="submit">Profile</button>
+                        <button className="btn btn-primary me-2" type="submit">Cart</button>
                     </div>
                 </div>
             </nav>

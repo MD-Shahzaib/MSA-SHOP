@@ -1,8 +1,12 @@
 import React from 'react'
+import Card from '../../Components/Card';
 
 const Home = () => {
     return (
-        <div>This is home component and change this to dashboard of MSA-SHOP Website </div>
+        <>
+            <div>This is home component</div>
+            <Card />
+        </>
     )
 }
 
