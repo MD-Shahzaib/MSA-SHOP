@@ -12,6 +12,15 @@ function App() {
       <Router />
       <Footer />
     </>
+
+    /*
+    ------- Todo complete in (24th march 2023) on [friday] -------.
+    - carditem style
+    - slider component
+    - SubHeading compnent
+    - contact compnent
+    - footer design
+    */
   );
 }
 
