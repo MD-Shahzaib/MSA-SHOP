@@ -11,12 +11,14 @@ const Card = () => {
           {data.map((item, index) => {
             return (
               <div className="col" key={item.productId}>
-                <div className="card">
-                  <img src={item.productImage} className="card-img" alt="Product-Image" />
-                  <div className="card-body">
-                    <h5 className="card-title">{item.productTitle}</h5>
-                    <p className="card-text">{item.description.slice(0, 40)}...</p>
-                    <h5 className="card-title">Rs : {item.price}</h5>
+                <div className="product-card bg-white">
+                  <div className="Product-Image-box">
+                    <img src={item.productImage} className="" alt="Product-Image" />
+                  </div>
+                  <div className="card-text">
+                    <h5 className="">{item.productTitle}</h5>
+                    <h6 className="mt-2">{item.description.slice(0, 40)}...</h6>
+                    <h5 className="mt-2">Rs : {item.price}</h5>
                     <a href="/" className="btn btn-primary">Details...</a>
                   </div>
                 </div>
