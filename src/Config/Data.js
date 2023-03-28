@@ -35,6 +35,18 @@ const users = [
         "quantity": "1 to 10",
         "address": "street 3 city 3 zipcode 3",
     },
+    {
+        "productId": 4,
+        "productTitle": "product 4",
+        "productImage": "https://cdn.homeshopping.pk/product_images/q/902/youpin-lab-kepup-smartwatch-black__99138_thumb.jpg",
+        "seller": "product seller 4",
+        "email": "seller email",
+        "price": "10000",
+        "phone": "seller no 23423423",
+        "description": "React class-based components: In this react course, we will see how to learn react using projects.",
+        "quantity": "1 to 10",
+        "address": "street 4 city 4 zipcode 4",
+    },
 ]
 
 export default users;
