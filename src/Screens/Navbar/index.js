@@ -1,5 +1,6 @@
 import React from 'react'
 import './navbar.css'
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     return (
@@ -12,9 +13,13 @@ const Navbar = () => {
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                        <button className="btn btn-primary me-2" type="submit">Search</button>
-                        <button className="btn btn-primary me-2" type="submit">Profile</button>
-                        <button className="btn btn-primary me-2" type="submit">Cart</button>
+                        <button className="btn btn-primary me-2">Search</button>
+                        <Link to='/profile'>
+                            <button className="btn btn-primary me-2">Profile</button>
+                        </Link>
+                        <Link to='/cart'>
+                            <button className="btn btn-primary me-2">Cart</button>
+                        </Link>
                     </div>
                 </div>
             </nav>

@@ -1,26 +1,17 @@
 import React from 'react'
 
 // Components.
-import Navbar from './Components/Navbar';
+import Navbar from './Screens/Navbar';
 import Router from './Config/Router'
-import Footer from './Components/Footer';
+import Footer from './Screens/Footer';
 
 function App() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <Router />
-      <Footer />
+      {/* <Footer /> */}
     </>
-
-    /*
-    ------- Todo complete in (24th march 2023) on [friday] -------.
-    - carditem style
-    - slider component
-    - SubHeading compnent
-    - contact compnent
-    - footer design
-    */
   );
 }
 
