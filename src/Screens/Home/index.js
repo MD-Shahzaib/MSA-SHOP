@@ -1,9 +1,9 @@
 import React from 'react'
 
 // Components.
+import Navbar from '../Navbar';
 import Card from '../../Components/Card';
 import Footer from '../Footer';
-import Navbar from '../Navbar';
 
 const Home = () => {
     return (

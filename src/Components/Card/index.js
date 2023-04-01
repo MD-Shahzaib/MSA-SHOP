@@ -1,11 +1,13 @@
 import React from 'react'
 import './card.css'
 import data from '../../Config/Data.js'
-import { Link, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 const Card = () => {
+
   const navigate = useNavigate()
   console.log('data', data);
+
   return (
     <>
       <div className="container bg-primary px-4 py-4">
@@ -13,7 +15,7 @@ const Card = () => {
           {data.map((item, index) => {
             return (
               <div className="col" key={index}>
-                <div className="product-card bg-white" onClick={() => { navigate('/detail') }}>
+                <div className="product-card bg-white" onClick={() => { navigate(`/detail/${item.productId}`) }}>
                   <div className="Product-Image-box">
                     <img src={item.productImage} alt="Product-Image" />
                   </div>

@@ -1,0 +1,14 @@
+.detailBox {
+    display: flex;
+}
+
+.productImageBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(47, 51, 56);
+}
+
+.productImage {
+    width: 50%;
+}
