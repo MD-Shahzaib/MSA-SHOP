@@ -1,14 +1,40 @@
-.detailBox {
+.detail-container {
     display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    flex-wrap: wrap;
 }
 
-.productImageBox {
+.left-box {
+    /* width: 55rem; */
+    width: 60%;
+}
+
+.right-box {
+    /* width: 40rem; */
+    width: 38%;
+}
+
+.image-box {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(47, 51, 56);
 }
 
-.productImage {
+.img-size {
     width: 50%;
+}
+
+.row-detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+hr {
+    margin: 0.5rem 0;
+}
+
+.seller-pic {
+    width: 5%;
 }
