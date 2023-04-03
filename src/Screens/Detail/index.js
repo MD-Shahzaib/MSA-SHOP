@@ -21,7 +21,7 @@ const data = {
 
 const Detail = () => {
 
-    // Get Minutes.
+    // Get Seconds.
     const date = new Date();
     const minutes = date.getSeconds()
 
@@ -29,8 +29,8 @@ const Detail = () => {
         <>
             <Navbar />
             {/* Detail Conatainer */}
-            <div className="container border border-dark py-2 px-2 my-5">
-                <h1 className="border border-dark">{data.productTitle}</h1>
+            <div className="container py-2 px-2 my-5">
+                <h1>{data.productTitle}</h1><hr />
                 <div className="detail-container">
                     {/* left-box  */}
                     <div className="left-box">

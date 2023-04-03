@@ -1,17 +1,13 @@
 .detail-container {
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
-    flex-wrap: wrap;
 }
 
 .left-box {
-    /* width: 55rem; */
     width: 60%;
 }
 
 .right-box {
-    /* width: 40rem; */
     width: 38%;
 }
 
@@ -36,5 +32,5 @@ hr {
 }
 
 .seller-pic {
-    width: 5%;
+    width: 3rem;
 }
