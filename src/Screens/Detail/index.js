@@ -31,7 +31,7 @@ const Detail = () => {
             {/* Detail Conatainer */}
             <div className="container py-2 px-2 my-5">
                 <h1>{data.productTitle}</h1><hr />
-                <div className="detail-container">
+                <div className="detail-container mt-3">
                     {/* left-box  */}
                     <div className="left-box">
                         {/* Image-box */}
