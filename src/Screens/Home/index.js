@@ -1,5 +1,4 @@
 import React from 'react'
-
 // Components.
 import Navbar from '../Navbar';
 import Card from '../../Components/Card';
@@ -9,8 +8,11 @@ const Home = () => {
     return (
         <>
             <Navbar />
-            <div className='bg-success text-white text-center fs-3'>Home</div>
-            <Card />
+            <div className='container my-5'>
+                <div className="row row-cols-md-4 g-4">
+                    <Card />
+                </div>
+            </div>
             <Footer />
         </>
     )

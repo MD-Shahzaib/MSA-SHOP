@@ -1,0 +1,17 @@
+.main-container {
+    background: url('https://mdbootstrap.com/img/new/fluid/city/008.jpg');
+    background-size: cover;
+}
+
+.bg-container {
+    background-color: #141718cc;
+    height: 100vh;
+}
+
+.auth-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}

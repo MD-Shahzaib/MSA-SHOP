@@ -13,6 +13,12 @@ const Navbar = () => {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
                     <button className="btn btn-primary me-2">Search</button>
+                    <Link to='/login'>
+                        <button className="btn btn-primary me-2">Login</button>
+                    </Link>
+                    <Link to='/register'>
+                        <button className="btn btn-primary me-2">Register</button>
+                    </Link>
                     <Link to='/profile'>
                         <button className="btn btn-primary me-2">Profile</button>
                     </Link>

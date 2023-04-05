@@ -6,30 +6,25 @@ import { useNavigate } from 'react-router-dom'
 const Card = () => {
 
   const navigate = useNavigate()
-  console.log('data', data);
 
   return (
     <>
-      <div className="container bg-primary px-4 py-4">
-        <div className="row row-cols-md-4 g-4">
-          {data.map((item, index) => {
-            return (
-              <div className="col" key={index}>
-                <div className="product-card bg-white" onClick={() => { navigate(`/detail/${item.productId}`) }}>
-                  <div className="Product-Image-box">
-                    <img src={item.productImage} alt="Product-Image" />
-                  </div>
-                  <div className="card-text">
-                    <h5>{item.productTitle}</h5>
-                    <h6 className="mt-2">{item.description.slice(0, 40)}...</h6>
-                    <h5 className="mt-2">Rs : {item.price}</h5>
-                  </div>
-                </div>
+      {data.map((item, index) => {
+        return (
+          <div className="col" key={index}>
+            <div className="product-card bg-white" onClick={() => { navigate(`/detail/${item.productId}`) }}>
+              <div className="Product-Image-box">
+                <img src={item.productImage} alt="Product-Image" />
               </div>
-            )
-          })}
-        </div>
-      </div>
+              <div className="card-text">
+                <h5>{item.productTitle}</h5>
+                <h6 className="mt-2">{item.description.slice(0, 40)}...</h6>
+                <h5 className="mt-2">Rs : {item.price}</h5>
+              </div>
+            </div>
+          </div>
+        )
+      })}
     </>
   )
 }
