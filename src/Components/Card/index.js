@@ -12,11 +12,11 @@ const Card = () => {
       {data.map((item, index) => {
         return (
           <div className="col" key={index}>
-            <div className="product-card bg-white" onClick={() => { navigate(`/detail/${item.productId}`) }}>
+            <div className="product-card bg-white border rounded-3" onClick={() => { navigate(`/detail/${item.productId}`) }}>
               <div className="Product-Image-box">
                 <img src={item.productImage} alt="Product-Image" />
               </div>
-              <div className="card-text">
+              <div className="py-2 px-2">
                 <h5>{item.productTitle}</h5>
                 <h6 className="mt-2">{item.description.slice(0, 40)}...</h6>
                 <h5 className="mt-2">Rs : {item.price}</h5>

@@ -71,21 +71,21 @@ const Detail = () => {
                             <h5>Seller Desciption</h5>
                             <div className="seller-profile d-flex align-items-md-center">
                                 <img src={data.sellerPicture} className="seller-pic" alt="seller-profile-pic" />
-                                <h5 className="m-2">{data.sellerName}</h5>
+                                <p className="m-2">{data.sellerName}</p>
                             </div><hr />
-                            <h6>Email : {data.sellerEmail}</h6>
-                            <h6>Phone : {data.sellerPhone}</h6>
-                            <h6>Address : {data.sellerAddress}</h6>
-                            <div className="btn btn-dark">Chat with Seller</div>
+                            <p>Email : {data.sellerEmail}</p>
+                            <p>Phone : {data.sellerPhone}</p>
+                            <p>Address : {data.sellerAddress}</p>
+                            <button className="btn btn-dark">Chat with Seller</button>
                         </div>
                         <div className="service-detail border rounded py-2 px-2">
                             <h5>Services</h5><hr />
-                            <h6>Nationwide Delivery</h6>
-                            <h6>Buyer Protection Guarantee</h6>
+                            <p>Nationwide Delivery</p>
+                            <p>Buyer Protection Guarantee</p>
                             <h5>Guarantee</h5><hr />
-                            <h6>Trusted Sellers Only</h6>
-                            <h6>7 days Return Policy</h6>
-                            <h6>Customer Service   03-111-476-725</h6>
+                            <p>Trusted Sellers Only</p>
+                            <p>7 days Return Policy</p>
+                            <p>Customer Service   03-111-476-725</p>
                         </div>
                     </div>
                 </div>

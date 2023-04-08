@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import Navbar from '../Navbar'
 import Footer from '../Footer'
 // React-Icons.
@@ -30,7 +31,6 @@ const Cart = () => {
                     <div className="container h-100 py-5">
                         <div className="row d-flex justify-content-center align-items-center h-100">
                             <div className="col-10">
-
                                 {/* Cart-Header */}
                                 <div className="d-flex justify-content-between align-items-center mb-4">
                                     <h3 className="fw-normal mb-0 text-black">Shopping Cart</h3>
@@ -44,7 +44,6 @@ const Cart = () => {
                                         </p>
                                     </div>
                                 </div>
-
                                 {/* Cart-Items */}
                                 {cartItems.map((item, index) => {
                                     return (
@@ -83,14 +82,12 @@ const Cart = () => {
                                         </div>
                                     )
                                 })}
-
                                 {/* Button-Box */}
-                                <div className="card col-md-12">
-                                    <div className="card-body">
+                                <Link to='/checkout' className='text-decoration-none'>
+                                    <div className="card col-md-12">
                                         <button className="btn btn-primary btn-lg">Checkout</button>
                                     </div>
-                                </div>
-
+                                </Link>
                             </div>
                         </div>
                     </div>
