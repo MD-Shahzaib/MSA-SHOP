@@ -1,14 +1,18 @@
 import React from 'react'
-import './login.css'
+import './auth.css'
 import { Link } from 'react-router-dom';
+// Componenets.
+import Navbar from '../Navbar'
+import Footer from '../Footer'
 
 const Login = () => {
     return (
         <>
+            <Navbar />
             <div className="main-container">
-                <div className="bg-color d-flex justify-content-center align-items-center">
-                    <div className='container d-flex justify-content-center align-items-center'>
-                        <div className="d-flex justify-content-center flex-column bg-white rounded py-5 px-5 w-50">
+                <div className="bg-color">
+                    <div className='container'>
+                        <div className="auth-card">
                             <h3 className='text-center mb-3'>Login</h3>
                             <div className="form-floating mb-3">
                                 <input type="email" className="form-control" id="email" placeholder="Email" />
@@ -18,7 +22,7 @@ const Login = () => {
                                 <input type="password" className="form-control" id="password" placeholder="Password" />
                                 <label htmlFor="password">Password</label>
                             </div>
-                            <div className="d-flex justify-content-between flex-wrap mb-3">
+                            <div className="forgot-box mb-3">
                                 <div className="form-check">
                                     <input type="checkbox" className="form-check-input" id="checkbox" />
                                     <label className="form-check-label" htmlFor="checkbox">Remember me</label>
@@ -31,6 +35,7 @@ const Login = () => {
                     </div>
                 </div>
             </div>
+            <Footer />
         </>
     )
 }

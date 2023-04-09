@@ -4,8 +4,10 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 // Screens.
 import Home from '../Screens/Home'
 import Login from "../Screens/Login";
+import Forgot from "../Screens/Forgot";
 import Register from "../Screens/Register";
 import Cart from "../Screens/Cart";
+import Checkout from "../Screens/Checkout"
 import Detail from "../Screens/Detail";
 import Profile from "../Screens/Profile";
 
@@ -20,12 +22,20 @@ const router = createBrowserRouter([
         element: <Login />,
     },
     {
+        path: "/forgot",
+        element: <Forgot />,
+    },
+    {
         path: "/register",
         element: <Register />,
     },
     {
         path: "/cart",
         element: <Cart />,
+    },
+    {
+        path: "/checkout",
+        element: <Checkout />,
     },
     {
         path: "/profile",

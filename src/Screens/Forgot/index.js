@@ -3,14 +3,14 @@ import React from 'react';
 import Navbar from "../Navbar";
 import Footer from "../Footer";
 
-const Checkout = () => {
+const Forgot = () => {
     return (
         <>
             <Navbar />
-            <h5>Checkout</h5>
+            <h5>Forgot Password</h5>
             <Footer />
         </>
     )
 }
 
-export default Checkout;
+export default Forgot;
