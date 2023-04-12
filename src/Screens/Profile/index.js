@@ -67,9 +67,9 @@ const Profile = () => {
                             <option value="4">Custom</option>
                         </select>
                     </div>
-                    <div class="mb-3">
-                        <label for="address" class="form-label">Address</label>
-                        <textarea class="form-control" id="address" rows="3"></textarea>
+                    <div className="mb-3">
+                        <label htmlFor="address" className="form-label">Address</label>
+                        <textarea className="form-control" id="address" rows="3"></textarea>
                     </div>
                     <div className="col-md-12">
                         <button type="submit" className="btn btn-primary">Save Changes</button>
