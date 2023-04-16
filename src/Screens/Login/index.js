@@ -27,7 +27,7 @@ const Login = () => {
                                     <input type="checkbox" className="form-check-input" id="checkbox" />
                                     <label className="form-check-label" htmlFor="checkbox">Remember me</label>
                                 </div>
-                                <Link to="/forgot" className='text-decoration-none'>Forgot password?</Link>
+                                <Link to="/forgotPassword" className='text-decoration-none'>Forgot password?</Link>
                             </div>
                             <button className="btn btn-primary">Login</button>
                             <div className='text-center mt-3'>Don't have an account? <Link to="/register" className='text-decoration-none'>Register</Link></div>

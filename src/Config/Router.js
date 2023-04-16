@@ -4,7 +4,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 // Screens.
 import Home from '../Screens/Home'
 import Login from "../Screens/Login";
-import Forgot from "../Screens/Forgot";
+import ForgotPassword from "../Screens/ForgotPassword";
+import ChangePassword from "../Screens/ChangePassword";
 import Register from "../Screens/Register";
 import Cart from "../Screens/Cart";
 import Checkout from "../Screens/Checkout"
@@ -22,12 +23,16 @@ const router = createBrowserRouter([
         element: <Login />,
     },
     {
-        path: "/forgot",
-        element: <Forgot />,
-    },
-    {
         path: "/register",
         element: <Register />,
+    },
+    {
+        path: "/forgotPassword",
+        element: <ForgotPassword />,
+    },
+    {
+        path: "/changePassword",
+        element: <ChangePassword />,
     },
     {
         path: "/cart",

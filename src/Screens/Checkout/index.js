@@ -7,7 +7,7 @@ const Checkout = () => {
     return (
         <>
             <Navbar />
-            <h5>Checkout</h5>
+            <h5>this is checkout page just create and UI structure complete of shopping website. and create server and end-points of API's .</h5>
             <Footer />
         </>
     )
