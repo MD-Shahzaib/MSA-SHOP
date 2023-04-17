@@ -9,8 +9,9 @@ import ChangePassword from "../Screens/ChangePassword";
 import Register from "../Screens/Register";
 import Cart from "../Screens/Cart";
 import Checkout from "../Screens/Checkout"
-import Detail from "../Screens/Detail";
+import Product from "../Screens/Product";
 import Profile from "../Screens/Profile";
+import Chat from "../Screens/Chat"
 
 // Import-Router-Components.
 const router = createBrowserRouter([
@@ -47,8 +48,12 @@ const router = createBrowserRouter([
         element: <Profile />,
     },
     {
-        path: "/detail/:id",
-        element: <Detail />,
+        path: "/product/:id",
+        element: <Product />,
+    },
+    {
+        path: "/chat/:id",
+        element: <Chat />,
     },
 ]);
 

@@ -1,8 +1,9 @@
 import React from 'react'
-import './detail.css'
+import './product.css'
 // Components.
 import Navbar from '../Navbar';
 import Footer from '../Footer';
+import { Link } from 'react-router-dom';
 
 const data = {
     "productId": 1,
@@ -19,7 +20,7 @@ const data = {
     "sellerAddress": "Saddar, Karachi, Pakistan",
 }
 
-const Detail = () => {
+const Product = () => {
 
     // Get Seconds.
     const date = new Date();
@@ -76,7 +77,17 @@ const Detail = () => {
                             <p>Email : {data.sellerEmail}</p>
                             <p>Phone : {data.sellerPhone}</p>
                             <p>Address : {data.sellerAddress}</p>
-                            <button className="btn btn-dark">Chat with Seller</button>
+                            <div className="button-box">
+                                <Link to="/chat/productId">
+                                    <button className="btn btn-primary mx-1 my-1">Chat with Seller</button>
+                                </Link>
+                                <Link to="/cart">
+                                    <button className="btn btn-dark mx-1 my-1">Add to Cart</button>
+                                </Link>
+                                <Link to="/checkout">
+                                    <button className="btn btn-success mx-1 my-1">Buy Now</button>
+                                </Link>
+                            </div>
                         </div>
                         <div className="service-detail border rounded py-2 px-2">
                             <h5>Services</h5><hr />
@@ -95,4 +106,4 @@ const Detail = () => {
     )
 }
 
-export default Detail;
+export default Product;

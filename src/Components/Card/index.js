@@ -12,7 +12,7 @@ const Card = () => {
       {data.map((item, index) => {
         return (
           <div className="col" key={index}>
-            <div className="product-card bg-white border rounded-3" onClick={() => { navigate(`/detail/${item.productId}`) }}>
+            <div className="product-card bg-white border rounded-3" onClick={() => { navigate(`/product/${item.productId}`) }}>
               <div className="Product-Image-box">
                 <img src={item.productImage} alt="Product-Image" />
               </div>
