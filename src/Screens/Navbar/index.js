@@ -8,7 +8,7 @@ import { MdAccountCircle } from 'react-icons/md';
 const Navbar = () => {
 
     // temporary-set-user.
-    const [user, setUser] = useState(false)
+    const [user, setUser] = useState(true)
 
     return (
         <>
