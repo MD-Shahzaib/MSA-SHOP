@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import '../Login/auth.css'
 import { Link } from 'react-router-dom';
+import '../Login/auth.css'
 // Componenets.
 import Navbar from '../Navbar'
 import Footer from '../Footer'
@@ -13,28 +13,35 @@ const Register = () => {
     const [password, setPassword] = useState('');
     const [phone, setPhone] = useState('');
 
-    // Register Function.
-    const registerUser = () => {
-        if (fullname && email && password && phone !== "") {
-            console.log(`fullname = ${fullname}, email = ${email}, password = ${password}, phone = ${phone}`);
-            return fetch("http://localhost:4000/user/addUser", {
+    // User-Register-Function.
+    const registerUser = async () => {
+        if (fullname !== "" && email !== "" && password !== "" && phone !== "") {
+            const response = await fetch('http://localhost:4000/user/addUser', {
                 method: 'POST',
+                body: JSON.stringify({ fullname, email, password, phone }),
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ fullname, email, password, phone })
             })
+            const json = await response.json()
+            console.log("json===> ", json);
+        } else {
+            console.log("Please Fill the form");
         }
-        alert("Please Fill the form");
-        // All set but have a cores issue --> fix later. 
     }
 
     return (
         <>
             <Navbar />
+            {/* Register Main Container */}
             <div className="main-container">
+                {/* Register bg-color Container */}
                 <div className="bg-color">
+                    {/* Register Container */}
                     <div className='container'>
+                        {/* Register Card */}
                         <div className="auth-card">
+                            {/* Title */}
                             <h3 className='text-center mb-3'>Register</h3>
+                            {/* Input-1 */}
                             <div className="form-floating mb-3">
                                 <input
                                     type="text"
@@ -46,6 +53,7 @@ const Register = () => {
                                 />
                                 <label htmlFor="name">Fullname</label>
                             </div>
+                            {/* Input-2 */}
                             <div className="form-floating mb-3">
                                 <input
                                     type="email"
@@ -57,6 +65,7 @@ const Register = () => {
                                 />
                                 <label htmlFor="email">Email</label>
                             </div>
+                            {/* Input-3 */}
                             <div className="form-floating mb-3">
                                 <input
                                     type="password"
@@ -68,6 +77,7 @@ const Register = () => {
                                 />
                                 <label htmlFor="password">Password</label>
                             </div>
+                            {/* Input-4 */}
                             <div className="form-floating mb-3">
                                 <input
                                     type="number"
@@ -79,8 +89,10 @@ const Register = () => {
                                 />
                                 <label htmlFor="number">Phone</label>
                             </div>
+                            {/* Register Btn */}
                             <button className="btn btn-primary" onClick={registerUser}>Register</button>
-                            <div className='text-center mt-3'>Already have an account? <Link to="/login" className='text-decoration-none'>Login</Link></div>
+                            {/* Login Link */}
+                            <div className='text-center mt-3'>Already have an account?<Link to="/login" className='text-decoration-none'>Login</Link></div>
                         </div>
                     </div>
                 </div>
