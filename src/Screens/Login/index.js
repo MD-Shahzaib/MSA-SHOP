@@ -27,8 +27,8 @@ const Login = () => {
             body: JSON.stringify({ email, password }),
             headers: { "Content-Type": "application/json" }
         };
-        const response = await fetch(path, payload)
-        const json = await response.json()
+        const response = await fetch(path, payload);
+        const json = await response.json();
         console.log("json2===> ", json);
         if (json.message === "Invalid Password") {
             alert("Invalid Credentials");
@@ -37,7 +37,7 @@ const Login = () => {
             console.log(`json.message ==> (${json.message}) email ==> (${email}) password ==> (${password})`);
             return navigate("/");
         }
-    }
+    };
 
     return (
         <>
@@ -71,10 +71,24 @@ const Login = () => {
                             </div>
                             <div className="forgot-box mb-3">
                                 <div className="form-check">
-                                    <input type="checkbox" className="form-check-input" id="checkbox" />
-                                    <label className="form-check-label" htmlFor="checkbox">Remember me</label>
+                                    <input
+                                        type="checkbox"
+                                        className="form-check-input"
+                                        id="checkbox"
+                                    />
+                                    <label
+                                        className="form-check-label"
+                                        htmlFor="checkbox"
+                                    >
+                                        Remember me
+                                    </label>
                                 </div>
-                                <Link to="/forgotPassword" className='text-decoration-none'>Forgot password?</Link>
+                                <Link
+                                    to="/forgotPassword"
+                                    className='text-decoration-none'
+                                >
+                                    Forgot password?
+                                </Link>
                             </div>
                             <button className="btn btn-primary" onClick={loginUser}>Login</button>
                             <div className='text-center mt-3'>Don't have an account? <Link to="/register" className='text-decoration-none'>Register</Link></div>
