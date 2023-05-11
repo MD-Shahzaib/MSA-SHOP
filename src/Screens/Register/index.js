@@ -1,11 +1,14 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import '../Login/auth.css'
 // Componenets.
 import Navbar from '../Navbar'
 import Footer from '../Footer'
 
 const Register = () => {
+
+    // Dynamic-Navigation.
+    const navigate = useNavigate();
 
     // Grab Input Values.
     const [fullname, setFullname] = useState('');
@@ -23,6 +26,7 @@ const Register = () => {
             })
             const json = await response.json()
             console.log("json===> ", json);
+            navigate("/");
         } else {
             console.log("Please Fill the form");
         }
