@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 import './auth.css'
 // Componenets.
-import Navbar from '../Navbar'
-import Footer from '../Footer'
+import Navbar from '../../Components/Navbar'
+import Footer from '../../Components/Footer'
 
 const Login = () => {
 

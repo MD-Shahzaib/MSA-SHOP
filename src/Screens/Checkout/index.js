@@ -1,7 +1,7 @@
 import React from 'react';
 // Components.
-import Navbar from "../Navbar";
-import Footer from "../Footer";
+import Navbar from "../../Components/Navbar";
+import Footer from "../../Components/Footer";
 
 const Checkout = () => {
     return (

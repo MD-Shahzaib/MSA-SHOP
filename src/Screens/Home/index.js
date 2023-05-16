@@ -1,8 +1,8 @@
 import React from 'react'
 // Components.
-import Navbar from '../Navbar';
+import Navbar from '../../Components/Navbar';
 import Card from '../../Components/Card';
-import Footer from '../Footer';
+import Footer from '../../Components/Footer';
 
 const Home = () => {
     return (
