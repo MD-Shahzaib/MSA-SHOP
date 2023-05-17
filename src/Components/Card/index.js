@@ -2,23 +2,23 @@ import React, { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import data from '../../Config/Data.js'
 import './card.css'
+import '../../globalStyle.css'
 
 const Card = () => {
 
   // GET PRODUCTS FROM DATABASE
-  useEffect(() => {
-    async function allProducts() {
-      try {
-        // const response = await fetch("https://jsonplaceholder.typicode.com/posts");
-        const response = await fetch("http://localhost:4000/product/getProducts");
-        const json = await response.json();
-        console.log("json ===> ", json);
-      } catch (error) {
-        console.log("error ===> ", error);
-      }
-    }
-    allProducts();
-  }, []);
+  // useEffect(() => {
+  //   const allProducts = async () => {
+  //     try {
+  //       const response = await fetch("http://localhost:4000/product/getProducts");
+  //       const json = await response.json();
+  //       console.log("json ===> ", json);
+  //     } catch (error) {
+  //       console.log("error ===> ", error);
+  //     }
+  //   }
+  //   allProducts();
+  // }, []);
 
   const navigate = useNavigate()
 

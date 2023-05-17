@@ -1,5 +1,7 @@
 import React from 'react'
 import './product.css'
+import '../../globalStyle.css'
+
 // Components.
 import Navbar from '../../Components/Navbar';
 import Footer from '../../Components/Footer';
@@ -37,7 +39,7 @@ const Product = () => {
                     <div className="left-box">
                         {/* Image-box */}
                         <div className="image-box border rounded bg-dark mb-2">
-                            <img src={data.productImage} className="img-size" alt="Product-Image" />
+                            <img src={data.productImage} className="img-size" alt="Product-pic" />
                         </div>
                         {/* detail-box */}
                         <div className="detail-box border py-2 px-2 rounded">

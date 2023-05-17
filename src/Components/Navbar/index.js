@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './navbar.css'
+import '../../globalStyle.css'
 import { Link } from 'react-router-dom';
 // ICONS.
 import { FaShoppingCart } from 'react-icons/fa';
