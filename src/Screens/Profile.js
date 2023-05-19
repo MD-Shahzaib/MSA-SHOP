@@ -1,7 +1,7 @@
 import React from 'react';
 // Components.
-import Navbar from '../../Components/Navbar';
-import Footer from '../../Components/Footer';
+import Navbar from '../Components/Navbar';
+import Footer from '../Components/Footer';
 
 const data = {
     "productId": 1,

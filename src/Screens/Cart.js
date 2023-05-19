@@ -1,7 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import Navbar from '../../Components/Navbar'
-import Footer from '../../Components/Footer'
+// Components.
+import Navbar from '../Components/Navbar'
+import Footer from '../Components/Footer'
 // React-Icons.
 import { GrFormDown } from 'react-icons/gr';
 import { FaTrash } from 'react-icons/fa';

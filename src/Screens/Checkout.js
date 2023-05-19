@@ -1,7 +1,7 @@
 import React from 'react';
 // Components.
-import Navbar from "../../Components/Navbar";
-import Footer from "../../Components/Footer";
+import Navbar from "../Components/Navbar";
+import Footer from "../Components/Footer";
 
 const Checkout = () => {
     return (
@@ -11,7 +11,7 @@ const Checkout = () => {
                 <main>
                     {/* Heading Section */}
                     <div className="py-5 text-center">
-                        <img className="mb-3" src={require("../../Images/main-logo.png")} alt="logo" width="100" height="100" />
+                        <img className="mb-3" src={require("../Images/main-logo.png")} alt="logo" width="100" height="100" />
                         <h2>Checkout form</h2>
                         <p className="lead">Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
                     </div>

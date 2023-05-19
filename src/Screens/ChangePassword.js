@@ -1,8 +1,8 @@
 import React from 'react';
-// Components.
-import Navbar from "../../Components/Navbar";
-import Footer from "../../Components/Footer";
 import { Link } from 'react-router-dom';
+// Components.
+import Navbar from "../Components/Navbar";
+import Footer from "../Components/Footer";
 
 const ChangePassword = () => {
     return (

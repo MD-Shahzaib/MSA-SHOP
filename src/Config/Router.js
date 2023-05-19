@@ -12,6 +12,7 @@ import Checkout from "../Screens/Checkout"
 import Product from "../Screens/Product";
 import Profile from "../Screens/Profile";
 import Chat from "../Screens/Chat"
+import Order from "../Screens/Order";
 
 // Import-Router-Components.
 const router = createBrowserRouter([
@@ -54,6 +55,10 @@ const router = createBrowserRouter([
     {
         path: "/chat/:id",
         element: <Chat />,
+    },
+    {
+        path: "/order",
+        element: <Order />,
     },
 ]);
 

@@ -42,9 +42,8 @@ export default App;
 (IMAGES)
   Logo2.png
   main-logo.png
-  seller-pic.png
-  Scene.mp4
 (IMAGES)
 
 (====> PROJECT STRUCTURE <====)
 */
+

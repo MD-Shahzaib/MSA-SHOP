@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
-import '../../globalStyle.css'
-// Componenets.
-import Navbar from '../../Components/Navbar'
-import Footer from '../../Components/Footer'
+// Components.
+import Navbar from '../Components/Navbar'
+import Footer from '../Components/Footer'
 
 const Login = () => {
 
@@ -16,18 +15,11 @@ const Login = () => {
 
     // User-Login-Function.
     const loginUser = async () => {
-        /* const response = await fetch('http://localhost:4000/user/login', {
-                method: 'POST',
-                body: JSON.stringify({ email, password }),
-                headers: { "Content-Type": "application/json" },
-        }) */
-        const path = "http://localhost:4000/user/login";
-        const payload = {
+        const response = await fetch('http://localhost:4000/user/login', {
             method: 'POST',
             body: JSON.stringify({ email, password }),
-            headers: { "Content-Type": "application/json" }
-        };
-        const response = await fetch(path, payload);
+            headers: { "Content-Type": "application/json" },
+        })
         const json = await response.json();
         console.log("json2===> ", json);
         if (json.message === "Invalid Password") {

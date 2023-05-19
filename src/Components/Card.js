@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import '../../globalStyle.css';
-// import data from '../../Config/Data.js';
 
 const Card = () => {
 

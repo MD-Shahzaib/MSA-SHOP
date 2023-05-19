@@ -1,7 +1,7 @@
 import React from 'react'
-// Componets.
-import Navbar from '../../Components/Navbar';
-import Footer from '../../Components/Footer';
+// Components.
+import Navbar from '../Components/Navbar';
+import Footer from '../Components/Footer';
 
 const Chat = () => {
     return (

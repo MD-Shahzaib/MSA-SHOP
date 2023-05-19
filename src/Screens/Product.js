@@ -1,10 +1,8 @@
-import React from 'react'
-import '../../globalStyle.css'
-
-// Components.
-import Navbar from '../../Components/Navbar';
-import Footer from '../../Components/Footer';
+import React from 'react';
 import { Link } from 'react-router-dom';
+// Components.
+import Navbar from '../Components/Navbar';
+import Footer from '../Components/Footer';
 
 const data = {
     "productId": 1,

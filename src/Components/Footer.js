@@ -1,17 +1,10 @@
 import React from 'react'
 // ICONS.
-import { FaFacebookF } from 'react-icons/fa';
-import { FaTwitter } from 'react-icons/fa';
-import { FaInstagram } from 'react-icons/fa';
-import { FaLinkedin } from 'react-icons/fa';
-import { FaGithub } from 'react-icons/fa';
-import { FaCrown } from 'react-icons/fa';
-import { FaHome } from 'react-icons/fa';
-import { FaPrint } from 'react-icons/fa';
-import { HiMail } from 'react-icons/hi';
-import { HiPhone } from 'react-icons/hi';
+import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedin, FaGithub, FaCrown, FaHome, FaPrint } from 'react-icons/fa';
+import { HiMail, HiPhone } from 'react-icons/hi';
 
 const Footer = () => {
+
     // Get Year.
     const date = new Date();
     const year = date.getFullYear()
