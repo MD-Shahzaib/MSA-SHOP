@@ -1,5 +1,4 @@
 import React from 'react'
-import './product.css'
 import '../../globalStyle.css'
 
 // Components.
