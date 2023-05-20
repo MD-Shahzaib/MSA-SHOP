@@ -34,7 +34,7 @@ const Card = () => {
               <div className="py-2 px-2">
                 <h5>{item.title}</h5>
                 <span>{item.category}</span>
-                <h6 className="mt-2">{item.description.slice(0, 40)}...</h6>
+                {/* <h6 className="mt-2">{item.description.slice(0, 40)}...</h6> */}
                 <h5 className="mt-2">Rs : {item.price}</h5>
               </div>
             </div>

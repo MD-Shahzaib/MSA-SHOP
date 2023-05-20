@@ -1,50 +1,67 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { Link, useParams } from 'react-router-dom';
 // Components.
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
 
-const data = {
-    "productId": 1,
-    "productImage": "https://cdn.homeshopping.pk/product_images/m/134/1__22526_thumb.jpg",
-    "productTitle": "IPhone XR",
-    "productPrice": "10,000",
-    "productQuantity": "10",
-    "productCondition": "New",
-    "productDescription": "React class-based components In this react course, we will see how to learn react using projects.",
-    "sellerName": "Shayan Akhter",
-    "sellerPicture": "https://olx-pak-clone.netlify.app/images/iconProfilePicture.png",
-    "sellerEmail": "shayan@gmail.com",
-    "sellerPhone": "34234534534",
-    "sellerAddress": "Saddar, Karachi, Pakistan",
-}
-
 const Product = () => {
 
+    const [singleProduct, setSingleProduct] = useState({});
+    // Grab Id.
+    const { id } = useParams();
     // Get Seconds.
     const date = new Date();
-    const minutes = date.getSeconds()
+    const minutes = date.getSeconds();
+
+    // Fetch Single Products by Id.
+    const fetchSingleProduct = async () => {
+        try {
+            const response = await fetch(`http://localhost:4000/product/getSingleProduct/${id}`);
+            const singleData = await response.json();
+            setSingleProduct(singleData.data);
+            console.log('singleData.data ==> ', singleData.data);
+        } catch (error) {
+            console.error('Error fetching products:', error);
+        }
+    };
+
+    useEffect(() => {
+        fetchSingleProduct();
+    }, []);
+
+    const data = {
+        "productQuantity": "10",
+        "productCondition": "New",
+        "sellerName": "Shayan Akhter",
+        "sellerPicture": "https://olx-pak-clone.netlify.app/images/iconProfilePicture.png",
+        "sellerEmail": "shayan@gmail.com",
+        "sellerPhone": "34234534534",
+        "sellerAddress": "Saddar, Karachi, Pakistan",
+    }
+
+    // Destructuring-singleProduct.
+    const { _id, title, category, price, description, productImage } = singleProduct;
 
     return (
         <>
             <Navbar />
             {/* Detail Conatainer */}
             <div className="container py-2 px-2 my-5">
-                <h1>{data.productTitle}</h1><hr />
+                <h1>{title}<span className='text-muted fs-5'> | {category} | </span><span className='text-muted fs-5'>{_id}</span></h1><hr />
                 <div className="detail-container mt-3">
                     {/* left-box  */}
                     <div className="left-box">
                         {/* Image-box */}
                         <div className="image-box border rounded bg-dark mb-2">
-                            <img src={data.productImage} className="img-size" alt="Product-pic" />
+                            <img src={productImage} className="img-size" alt="Product-pic" />
                         </div>
                         {/* detail-box */}
                         <div className="detail-box border py-2 px-2 rounded">
                             <div className="detail-sub-box1">
                                 <h5>Details</h5>
                                 <div className='row-detail'>
-                                    <p>Title : {data.productTitle}</p>
-                                    <p>Price : {data.productPrice}</p>
+                                    <p>Title : {title}</p>
+                                    <p>Price : {price}</p>
                                 </div>
                                 <div className='row-detail'>
                                     <p>Condition : {data.productCondition}</p>
@@ -53,15 +70,15 @@ const Product = () => {
                             </div><hr />
                             <div className="detail-sub-box2">
                                 <h5>Description</h5>
-                                <p>{data.productDescription}</p>
+                                <p>{description}</p>
                             </div>
                         </div>
                     </div>
                     {/* right-box */}
                     <div className="right-box">
                         <div className="border rounded py-2 px-2 mb-2">
-                            <h2>Rs : {data.productPrice}</h2>
-                            <h5>{data.productTitle}</h5>
+                            <h2>Rs : {price}</h2>
+                            <h5>{title}</h5>
                             <div className="d-flex justify-content-between align-item-center">
                                 <span>{data.sellerAddress}</span>
                                 <span>{minutes} days ago</span>
@@ -103,6 +120,6 @@ const Product = () => {
             <Footer />
         </>
     )
-}
+};
 
 export default Product;
