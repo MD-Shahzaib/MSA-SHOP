@@ -4,14 +4,13 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 // Screens.
 import Home from '../Screens/Home'
 import Login from "../Screens/Login";
+import Register from "../Screens/Register";
 import ForgotPassword from "../Screens/ForgotPassword";
 import ChangePassword from "../Screens/ChangePassword";
-import Register from "../Screens/Register";
+import Profile from "../Screens/Profile";
+import Product from "../Screens/Product";
 import Cart from "../Screens/Cart";
 import Checkout from "../Screens/Checkout"
-import Product from "../Screens/Product";
-import Profile from "../Screens/Profile";
-import Chat from "../Screens/Chat"
 import Order from "../Screens/Order";
 
 // Import-Router-Components.
@@ -37,14 +36,6 @@ const router = createBrowserRouter([
         element: <ChangePassword />,
     },
     {
-        path: "/cart",
-        element: <Cart />,
-    },
-    {
-        path: "/checkout",
-        element: <Checkout />,
-    },
-    {
         path: "/profile",
         element: <Profile />,
     },
@@ -53,8 +44,12 @@ const router = createBrowserRouter([
         element: <Product />,
     },
     {
-        path: "/chat/:id",
-        element: <Chat />,
+        path: "/cart",
+        element: <Cart />,
+    },
+    {
+        path: "/checkout",
+        element: <Checkout />,
     },
     {
         path: "/order",
