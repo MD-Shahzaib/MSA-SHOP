@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 // Components.
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
@@ -7,7 +8,7 @@ const Checkout = () => {
     return (
         <>
             <Navbar />
-            <div className="container { my-5 py-3 border } ">
+            <div className="container mb-3">
                 <main>
                     {/* Heading Section */}
                     <div className="py-5 text-center">
@@ -209,8 +210,10 @@ const Checkout = () => {
                                 </div>
 
                                 <hr className="my-4" />
-
-                                <button className="w-100 btn btn-primary btn-lg" type="submit">Continue to checkout</button>
+                                <div>
+                                    <button className="btn btn-primary btn-lg me-2">checkout</button>
+                                    <Link to="/order"><button className="btn btn-primary btn-lg">All Orders</button></Link>
+                                </div>
                             </form>
                         </div>
                     </div>

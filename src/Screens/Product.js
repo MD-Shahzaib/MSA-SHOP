@@ -6,7 +6,7 @@ import Footer from '../Components/Footer';
 // Icons.
 import { AiFillStar, AiOutlineStar } from 'react-icons/ai';
 import { FaFacebookF, FaTwitter, FaHeart } from 'react-icons/fa';
-import { BsChatFill, BsCircleFill } from 'react-icons/bs';
+import { BsChatFill } from 'react-icons/bs';
 
 const Product = () => {
 
@@ -50,46 +50,32 @@ const Product = () => {
     <>
       <Navbar />
       {/* Product Container */}
-      <div className="container border d-flex justify-content-evenly my-5 py-2">
+      <div className="container d-flex justify-content-evenly flex-wrap my-5">
         {/* Product Image Box */}
         <div className="product-image-box">
-          <img src="https://dummyimage.com/500x500" className="rounded" alt="ecommerce" />
+          <img src="https://dummyimage.com/400x400" className="rounded" alt="ecommerce" />
         </div>
         {/* Product Content Box */}
-        <div className="product-content-box border">
+        <div className="product-content-box">
           <h2 className="brand-name">BRAND NAME</h2>
-          <h1 className="product-title">The Catcher in the Rye</h1>
+          <h1 className="product-title mb-2">The Catcher in the Rye</h1>
           {/* Product Rewiews */}
           <div className='d-flex align-items-center'>
-            <AiFillStar />
-            <AiFillStar />
-            <AiFillStar />
-            <AiFillStar />
-            <AiOutlineStar />
+            <AiFillStar /><AiFillStar /><AiFillStar /><AiFillStar /><AiOutlineStar />
             <span className="px-2 me-2 border-end">4 Reviews</span>
-            <FaFacebookF />
-            <FaTwitter />
-            <BsChatFill />
+            <FaFacebookF /><FaTwitter className='mx-1' /><BsChatFill />
           </div>
-          <p className="product-desc">Fam locavore kickstarter distillery. Mixtape chillwave tumeric sriracha taximy chia microdosing tilde DIY. XOXO fam indxgo juiceramps cornhole raw denim forage brooklyn. Everyday carry +1 seitan poutine tumeric. Gastropub blue bottle austin listicle pour-over, neutra jean shorts keytar banjo tattooed umami cardigan.</p>
-
-
-
-
-
-
-
-          <div className="border d-flex">
-            <div className="me-3">
-              <span className="me-2">Color</span>
-              <BsCircleFill color='#4299e1' />
-              <BsCircleFill color='#414d56' />
-              <BsCircleFill color='#48bb78' />
-              <BsCircleFill color='indigo' />
-            </div>
-            <div className="">
-              <span className="me-2">Size</span>
-              <select className="">
+          <p className="product-desc my-3">Fam locavore kickstarter distillery. Mixtape chillwave tumeric sriracha taximy chia microdosing tilde DIY. XOXO fam indxgo juiceramps cornhole raw denim forage brooklyn. Everyday carry +1 seitan poutine tumeric. Gastropub blue bottle austin listicle pour-over, neutra jean shorts keytar banjo tattooed umami cardigan.</p>
+          <div className="d-flex">
+            <div className="d-flex align-items-center">
+              <span className='product-desc me-3 m-0'>Color</span>
+              <div className=" d-flex me-4">
+                <div className="circle border rounded-circle bg-light"></div>
+                <div className="circle border rounded-circle bg-secondary mx-1"></div>
+                <div className="circle border rounded-circle bg-info"></div>
+              </div>
+              <span className='product-desc me-3 m-0'>Size</span>
+              <select className='p-2 border rounded-3'>
                 <option>SM</option>
                 <option>M</option>
                 <option>L</option>
@@ -97,22 +83,18 @@ const Product = () => {
               </select>
             </div>
           </div>
-
-          <div className="">
-            <span className="">$58.00</span>
-            <button className="">Button</button>
-            <button className=""><FaHeart /></button>
-            <Link to="/cart">
-              <button className="btn btn-dark mx-1 my-1">Add to Cart</button>
-            </Link>
-            <Link to="/checkout">
-              <button className="btn btn-success mx-1 my-1">Buy Now</button>
-            </Link>
-            <Link to="/order">
-              <button className="btn btn-dark mx-1 my-1">All Orders</button>
-            </Link>
+          <div className='d-flex justify-content-between align-items-center border-top mt-3 pt-3'>
+            <h4 className='m-0'>$58.00</h4>
+            <div className='d-flex justify-content-between align-items-center'>
+              <Link to="/cart">
+                <button className="btn btn-primary">Add to Cart</button>
+              </Link>
+              <Link to="/checkout">
+                <button className="btn btn-primary mx-2">Buy Now</button>
+              </Link>
+              <span className='border py-1 px-2 rounded-circle'><FaHeart /></span>
+            </div>
           </div>
-
         </div>
       </div>
       <Footer />

@@ -78,24 +78,27 @@
 
 
 /* ------------------------ (product.css) ------------------------ */
-
-
-.product-content-box{
-    max-width: 500px;
+.product-content-box {
+    max-width: 400px;
 }
-.brand-name{
+
+.brand-name {
     font-size: 0.8rem;
     color: #7b909af0;
 }
-.product-title{
+
+.product-title {
     font-size: 1.5rem;
 }
-.product-desc{
+
+.product-desc {
     font-size: 0.9rem;
-    margin: 1rem 0;
 }
 
-
+.circle {
+    width: 1.5rem;
+    height: 1.5rem;
+}
 
 /* .detail-container {
     display: flex;
