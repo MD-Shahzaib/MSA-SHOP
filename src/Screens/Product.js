@@ -49,47 +49,55 @@ const Product = () => {
   return (
     <>
       <Navbar />
-      <div className="">
-        <img src="https://dummyimage.com/400x400" className="rounded" alt="ecommerce" />
-        <div className="">
-          <h2 className="">BRAND NAME</h2>
-          <h1 className="">The Catcher in the Rye</h1>
-          <div className="">
-            <span className="">
-              <AiFillStar />
-              <AiFillStar />
-              <AiFillStar />
-              <AiFillStar />
-              <AiOutlineStar />
-              <span className="">4 Reviews</span>
-            </span>
-            <span className="">
-              <FaFacebookF />
-              <FaTwitter />
-              <BsChatFill />
-            </span>
+      {/* Product Container */}
+      <div className="container border d-flex justify-content-evenly my-5 py-2">
+        {/* Product Image Box */}
+        <div className="product-image-box">
+          <img src="https://dummyimage.com/500x500" className="rounded" alt="ecommerce" />
+        </div>
+        {/* Product Content Box */}
+        <div className="product-content-box border">
+          <h2 className="brand-name">BRAND NAME</h2>
+          <h1 className="product-title">The Catcher in the Rye</h1>
+          {/* Product Rewiews */}
+          <div className='d-flex align-items-center'>
+            <AiFillStar />
+            <AiFillStar />
+            <AiFillStar />
+            <AiFillStar />
+            <AiOutlineStar />
+            <span className="px-2 me-2 border-end">4 Reviews</span>
+            <FaFacebookF />
+            <FaTwitter />
+            <BsChatFill />
           </div>
-          <p className="">Fam locavore kickstarter distillery. Mixtape chillwave tumeric sriracha taximy chia microdosing tilde DIY. XOXO fam indxgo juiceramps cornhole raw denim forage brooklyn. Everyday carry +1 seitan poutine tumeric. Gastropub blue bottle austin listicle pour-over, neutra jean shorts keytar banjo tattooed umami cardigan.</p>
-          <div className="">
-            <div className="">
-              <span className="">Color</span>
+          <p className="product-desc">Fam locavore kickstarter distillery. Mixtape chillwave tumeric sriracha taximy chia microdosing tilde DIY. XOXO fam indxgo juiceramps cornhole raw denim forage brooklyn. Everyday carry +1 seitan poutine tumeric. Gastropub blue bottle austin listicle pour-over, neutra jean shorts keytar banjo tattooed umami cardigan.</p>
+
+
+
+
+
+
+
+          <div className="border d-flex">
+            <div className="me-3">
+              <span className="me-2">Color</span>
               <BsCircleFill color='#4299e1' />
               <BsCircleFill color='#414d56' />
               <BsCircleFill color='#48bb78' />
               <BsCircleFill color='indigo' />
             </div>
             <div className="">
-              <span className="">Size</span>
-              <div className="">
-                <select className="">
-                  <option>SM</option>
-                  <option>M</option>
-                  <option>L</option>
-                  <option>XL</option>
-                </select>
-              </div>
+              <span className="me-2">Size</span>
+              <select className="">
+                <option>SM</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+              </select>
             </div>
           </div>
+
           <div className="">
             <span className="">$58.00</span>
             <button className="">Button</button>
@@ -97,13 +105,14 @@ const Product = () => {
             <Link to="/cart">
               <button className="btn btn-dark mx-1 my-1">Add to Cart</button>
             </Link>
-            <Link to="/order">
-              <button className="btn btn-dark mx-1 my-1">All Orders</button>
-            </Link>
             <Link to="/checkout">
               <button className="btn btn-success mx-1 my-1">Buy Now</button>
             </Link>
+            <Link to="/order">
+              <button className="btn btn-dark mx-1 my-1">All Orders</button>
+            </Link>
           </div>
+
         </div>
       </div>
       <Footer />

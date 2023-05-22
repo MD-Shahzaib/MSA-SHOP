@@ -1,3 +1,25 @@
+/* ------------------------ (navbar.css) ------------------------ */
+.Logo {
+    width: 20%;
+    border-radius: 0.5rem;
+}
+
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+/* ------------------------ (navbar.css) ------------------------ */
+
+
+/* ------------------------ (Home/index.js) ------------------------ */
+
+.row {
+    justify-content: center;
+}
+
+/* ------------------------ (Home/index.js) ------------------------ */
+
+
 /* ------------------------ (auth.css) ------------------------ */
 .main-container {
     background: url('https://mdbootstrap.com/img/new/fluid/city/008.jpg');
@@ -30,8 +52,52 @@
 /* ------------------------ (auth.css) ------------------------ */
 
 
+
+/* ------------------------ (card.css) ------------------------ */
+.product-card:hover {
+    box-shadow: -2px 2px 5px 0px #b0acac;
+    cursor: pointer;
+}
+
+.Product-Image-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #e9e9e9;
+    padding: 1rem;
+}
+
+.Product-image {
+    width: 10rem;
+    height: 10rem;
+}
+
+/* ------------------------ (card.css) ------------------------ */
+
+
+
 /* ------------------------ (product.css) ------------------------ */
-.detail-container {
+
+
+.product-content-box{
+    max-width: 500px;
+}
+.brand-name{
+    font-size: 0.8rem;
+    color: #7b909af0;
+}
+.product-title{
+    font-size: 1.5rem;
+}
+.product-desc{
+    font-size: 0.9rem;
+    margin: 1rem 0;
+}
+
+
+
+/* .detail-container {
     display: flex;
     justify-content: space-between;
 }
@@ -66,50 +132,6 @@ hr {
 
 .seller-pic {
     width: 3rem;
-}
+} */
 
 /* ------------------------ (product.css) ------------------------ */
-
-
-/* ------------------------ (navbar.css) ------------------------ */
-.Logo {
-    width: 20%;
-    border-radius: 0.5rem;
-}
-
-.navbar-collapse {
-    flex-grow: 0;
-}
-
-/* ------------------------ (navbar.css) ------------------------ */
-
-
-/* ------------------------ (card.css) ------------------------ */
-.product-card:hover {
-    box-shadow: -2px 2px 5px 0px #b0acac;
-    cursor: pointer;
-}
-
-.Product-Image-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background: #e9e9e9;
-    padding: 1rem;
-}
-
-.Product-image {
-    width: 10rem;
-    height: 10rem;
-}
-
-/* ------------------------ (card.css) ------------------------ */
-
-/* ------------------------ (Home/index.js) ------------------------ */
-
-.row {
-    justify-content: center;
-}
-
-/* ------------------------ (Home/index.js) ------------------------ */
