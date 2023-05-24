@@ -10,15 +10,12 @@
 
 /* ------------------------ (navbar) ------------------------ */
 
-
 /* ------------------------ (Home) ------------------------ */
-
 .row {
     justify-content: center;
 }
 
 /* ------------------------ (Home) ------------------------ */
-
 
 /* ------------------------ (auth) ------------------------ */
 .main-container {
@@ -51,8 +48,6 @@
 
 /* ------------------------ (auth) ------------------------ */
 
-
-
 /* ------------------------ (card) ------------------------ */
 .product-card:hover {
     box-shadow: -2px 2px 5px 0px #b0acac;
@@ -75,11 +70,15 @@
 
 /* ------------------------ (card) ------------------------ */
 
-
-
 /* ------------------------ (product) ------------------------ */
 .product-content-box {
-    max-width: 400px;
+    max-width: 420px;
+    width: 400px;
+}
+
+.product-image-container {
+    width: 400px;
+    height: 400px;
 }
 
 .brand-name {
@@ -87,11 +86,16 @@
     color: #7b909af0;
 }
 
+.product-category {
+    font-size: 0.75rem;
+    color: #93a4ac;
+}
+
 .product-title {
     font-size: 1.5rem;
 }
 
-.product-desc {
+.fs-product-text {
     font-size: 0.9rem;
 }
 
@@ -99,42 +103,5 @@
     width: 1.5rem;
     height: 1.5rem;
 }
-
-/* .detail-container {
-    display: flex;
-    justify-content: space-between;
-}
-
-.left-box {
-    width: 60%;
-}
-
-.right-box {
-    width: 38%;
-}
-
-.image-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.img-size {
-    width: 50%;
-}
-
-.row-detail {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-hr {
-    margin: 0.5rem 0;
-}
-
-.seller-pic {
-    width: 3rem;
-} */
 
 /* ------------------------ (product) ------------------------ */

@@ -13,7 +13,7 @@ const Navbar = () => {
 
     return (
         <>
-            <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+            <nav className="navbar navbar-expand-lg navbar-dark bg-dark position-sticky top-0" style={{ zIndex: 100 }}>
                 <div className="container-fluid">
                     <Link className="navbar-brand" to="/">
                         <img src={Logo} className="Logo" alt="Logo" />
