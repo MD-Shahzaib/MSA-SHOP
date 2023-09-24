@@ -11,3 +11,111 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* ------------------------ (navbar) ------------------------ */
+.Logo {
+  width: 20%;
+  border-radius: 0.5rem;
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+/* ------------------------ (navbar) ------------------------ */
+
+/* ------------------------ (Home) ------------------------ */
+.row {
+  justify-content: center;
+}
+
+/* ------------------------ (Home) ------------------------ */
+
+/* ------------------------ (auth) ------------------------ */
+.main-container {
+  background: url('https://mdbootstrap.com/img/new/fluid/city/008.jpg');
+  background-size: cover;
+}
+
+.bg-color {
+  background-color: #141718cc;
+  padding: 3rem;
+  padding: 5rem 3rem;
+}
+
+.auth-card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: aliceblue;
+  border-radius: 10px;
+  padding: 3rem;
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+.forgot-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* ------------------------ (auth) ------------------------ */
+
+/* ------------------------ (card) ------------------------ */
+.product-card:hover {
+  box-shadow: -2px 2px 5px 0px #b0acac;
+  cursor: pointer;
+}
+
+.Product-Image-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #e9e9e9;
+  padding: 1rem;
+}
+
+.Product-image {
+  width: 10rem;
+  height: 10rem;
+}
+
+/* ------------------------ (card) ------------------------ */
+
+/* ------------------------ (product) ------------------------ */
+.product-content-box {
+  max-width: 420px;
+  width: 400px;
+}
+
+.product-image-container {
+  width: 400px;
+  height: 400px;
+}
+
+.brand-name {
+  font-size: 0.8rem;
+  color: #7b909af0;
+}
+
+.product-category {
+  font-size: 0.75rem;
+  color: #93a4ac;
+}
+
+.product-title {
+  font-size: 1.5rem;
+}
+
+.fs-product-text {
+  font-size: 0.9rem;
+}
+
+.circle {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+/* ------------------------ (product) ------------------------ */
